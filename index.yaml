@@ -6,7 +6,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 0.66.0
-    created: "2023-06-15T18:49:17.2549255+02:00"
+    created: "2023-06-15T18:50:40.5719886+02:00"
     dependencies:
     - condition: exporters.enabled,exporters.node-exporter.enabled
       name: node-exporter
@@ -46,7 +46,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 0.66.0
-    created: "2023-06-15T18:49:17.2407256+02:00"
+    created: "2023-06-15T18:50:40.5573621+02:00"
     dependencies:
     - condition: exporters.enabled,exporters.node-exporter.enabled
       name: node-exporter
@@ -81,4 +81,4 @@ entries:
     urls:
     - https://balsir.github.io/bitnami-charts/kube-prometheus-8.13.1.tgz
     version: 8.13.1
-generated: "2023-06-15T18:49:17.2261156+02:00"
+generated: "2023-06-15T18:50:40.5432621+02:00"
