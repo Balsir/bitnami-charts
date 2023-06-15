@@ -6,7 +6,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 0.66.0
-    created: "2023-06-15T18:23:31.796904+02:00"
+    created: "2023-06-15T18:31:08.3741832+02:00"
     dependencies:
     - condition: exporters.enabled,exporters.node-exporter.enabled
       name: node-exporter
@@ -23,7 +23,7 @@ entries:
       version: 2.x.x
     description: Prometheus Operator provides easy monitoring definitions for Kubernetes
       services and deployment and management of Prometheus instances.
-    digest: b1fe1f63d16a3cb5426365da3236b71522f3a03fe53b18acc8e34501440860dc
+    digest: 304aa32126b3b23e465a229045039a30a451d7ed6805f7fe585e8aeca9e9e6dc
     home: https://bitnami.com
     icon: https://bitnami.com/assets/stacks/prometheus-operator/img/prometheus-operator-stack-220x234.png
     keywords:
@@ -46,7 +46,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 0.66.0
-    created: "2023-06-15T18:23:31.7774237+02:00"
+    created: "2023-06-15T18:31:08.3603376+02:00"
     dependencies:
     - condition: exporters.enabled,exporters.node-exporter.enabled
       name: node-exporter
@@ -81,4 +81,4 @@ entries:
     urls:
     - https://balsir.github.io/bitnami-charts/kube-prometheus-8.13.1.tgz
     version: 8.13.1
-generated: "2023-06-15T18:23:31.7531958+02:00"
+generated: "2023-06-15T18:31:08.3457016+02:00"
