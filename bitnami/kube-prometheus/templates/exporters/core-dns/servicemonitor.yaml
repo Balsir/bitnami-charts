@@ -6,8 +6,8 @@ metadata:
   namespace: {{ include "common.names.namespace" . | quote }}
   labels: {{- include "common.labels.standard" . | nindent 4 }}
     app.kubernetes.io/component: {{ template "kube-prometheus.fullname" . }}-coredns
-    {{- if .Values.kubeProxy.serviceMonitor.labels }}
-    {{- include "common.tplvalues.render" ( dict "value" .Values.kubeProxy.serviceMonitor.labels "context" $ ) | nindent 4 }}
+    {{- if .Values.coreDns.serviceMonitor.labels }}
+    {{- include "common.tplvalues.render" ( dict "value" .Values.coreDns.serviceMonitor.labels "context" $ ) | nindent 4 }}
     {{- end }}
     {{- if .Values.commonLabels }}
     {{- include "common.tplvalues.render" ( dict "value" .Values.commonLabels "context" $ ) | nindent 4 }}
@@ -16,8 +16,8 @@ metadata:
     {{- if .Values.commonAnnotations }}
     {{- include "common.tplvalues.render" ( dict "value" .Values.commonAnnotations "context" $ ) | nindent 4 }}
     {{- end }}
-    {{- if .Values.kubeProxy.serviceMonitor.annotations }}
-    {{- include "common.tplvalues.render" ( dict "value" .Values.kubeProxy.serviceMonitor.annotations "context" $ ) | nindent 4 }}
+    {{- if .Values.coreDns.serviceMonitor.annotations }}
+    {{- include "common.tplvalues.render" ( dict "value" .Values.coreDns.serviceMonitor.annotations "context" $ ) | nindent 4 }}
     {{- end }}
 spec:
   jobLabel: {{ .Values.coreDns.serviceMonitor.jobLabel }}
